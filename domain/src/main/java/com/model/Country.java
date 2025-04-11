@@ -1,4 +1,4 @@
-package src.java.com.model;
+package com.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

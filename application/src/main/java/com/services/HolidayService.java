@@ -1,12 +1,12 @@
 package com.services;
-import com.usecases.HolidayDateCalculator;
-import domain.src.java.com.model.Holiday;
-import org.springframework.stereotype.Service;
-import src.java.com.repositories.HolidayRepository;
 
+import org.springframework.stereotype.Service;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
+import com.model.Holiday;
+import com.usecases.HolidayDateCalculator;
+
 
 @Service
 public class HolidayService {

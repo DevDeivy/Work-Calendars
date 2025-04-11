@@ -1,6 +1,5 @@
-package src.java.com.repositories;
-
-import domain.src.java.com.model.Holiday;
+package com.repositories;
+import com.model.Holiday;
 
 import java.util.List;
 import java.util.Optional;

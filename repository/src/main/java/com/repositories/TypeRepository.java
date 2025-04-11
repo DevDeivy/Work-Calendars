@@ -1,7 +1,6 @@
-package src.java.com.repositories;
+package com.repositories;
 
-import domain.src.java.com.model.Type;
-
+import com.model.Type;
 import java.util.List;
 import java.util.Optional;
 

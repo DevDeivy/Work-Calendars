@@ -1,10 +1,10 @@
 package com.services;
 
-import domain.src.java.com.model.Country;
-import src.java.com.repositories.CountryRepository;
 
 import java.util.List;
 import java.util.Optional;
+import com.model.Country;
+import com.repositories.CountryRepository;
 
 public class CountryService {
 

@@ -1,7 +1,6 @@
 package com.services;
 
-import domain.src.java.com.model.Type;
-import src.java.com.repositories.TypeRepository;
+import com.model.Type;
 
 import java.util.List;
 import java.util.Optional;
