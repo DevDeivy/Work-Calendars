@@ -15,7 +15,7 @@ The project is divided into several layers, each responsible for a specific set 
 
 ## Architecture
 
-The project follows the principles of hexagonal architecture, which allows for a clear separation of concerns and easier code maintenance. Each layer interacts with the next layer according to its responsibility, minimizing coupling between them.
+The project follows the principles of cebolla architecture, which allows for a clear separation of concerns and easier code maintenance. Each layer interacts with the next layer according to its responsibility, minimizing coupling between them.
 
 ## Dependencies
 
