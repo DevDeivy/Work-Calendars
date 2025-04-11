@@ -1,11 +1,12 @@
-package src.java.com.repositories;
+package com.repositories;
 
-import domain.src.java.com.model.Country;
+import com.model.Country;
 
 import java.util.List;
 import java.util.Optional;
 
-public interface CountryRepository {
+@Repos
+public interface CountryRepository extends JpaRepository<Country, Long> {
 
     Country save(Country country);
 

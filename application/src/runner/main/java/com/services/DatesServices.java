@@ -10,8 +10,8 @@ public class DatesServices {
 
         int days = d + (2*b + 4*c +6*d +5) % 7;
         
-        int day = 15 + dias;
-        int month = 3;
+            int day = 15 + dias;
+            int month = 3;
         if (day > 31) {
             day = day - 31;
             day = 4;

@@ -1,4 +1,4 @@
-package src.java.com.model;
+package com.model;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;

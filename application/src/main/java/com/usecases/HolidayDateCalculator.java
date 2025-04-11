@@ -1,6 +1,6 @@
 package com.usecases;
 
-import domain.src.java.com.model.Holiday;
+import com.model.Holiday;
 import org.springframework.stereotype.Component;
 
 import java.time.DayOfWeek;

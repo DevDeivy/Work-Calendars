@@ -33,18 +33,15 @@
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
         </dependency>
-
         <dependency>
             <groupId>com.daniel</groupId>
-            <artifactId>calendar-api-onion</artifactId>
+            <artifactId>domain</artifactId>
             <version>1.0.0</version>
-            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>com.daniel</groupId>
             <artifactId>repository</artifactId>
             <version>1.0.0</version>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>
