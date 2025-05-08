@@ -1,0 +1,21 @@
+package domain.src.main.java.com.calendar.domain.repositories;
+
+import domain.src.main.java.com.calendar.domain.models.Holiday;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface HolidayRepository {
+
+    Holiday save(Holiday holiday);
+
+    Optional<Holiday> findById(Long id);
+
+    List<Holiday> findAll();
+
+    Holiday update(Holiday holiday);
+
+    void deleteById(Long id);
+
+    boolean existsByName(String name);
+}
