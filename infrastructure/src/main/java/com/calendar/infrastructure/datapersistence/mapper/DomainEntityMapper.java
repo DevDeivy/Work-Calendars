@@ -1,12 +1,13 @@
-package infrastructure.src.main.java.com.calendar.infrastructure.datapersistence.mapper;
+package com.calendar.infrastructure.datapersistence.mapper;
 
+import com.calendar.domain.models.Country;
+import com.calendar.domain.models.Holiday;
+import com.calendar.domain.models.Type;
+import com.calendar.infrastructure.entities.CountryEntity;
+import com.calendar.infrastructure.entities.HolidayEntity;
+import com.calendar.infrastructure.entities.TypeEntity;
 
-import domain.src.main.java.com.calendar.domain.models.Country;
-import domain.src.main.java.com.calendar.domain.models.Holiday;
-import domain.src.main.java.com.calendar.domain.models.Type;
-import infrastructure.src.main.java.com.calendar.infrastructure.entities.CountryEntity;
-import infrastructure.src.main.java.com.calendar.infrastructure.entities.HolidayEntity;
-import infrastructure.src.main.java.com.calendar.infrastructure.entities.TypeEntity;
+import java.time.LocalDate;
 
 public class DomainEntityMapper {
 
@@ -16,7 +17,11 @@ public class DomainEntityMapper {
     }
 
     public static Country toDomain(CountryEntity entity) {
-        return new Country(entity.getId(), entity.getName());
+        Country country = new Country();
+        country.setId(entity.getId());
+        country.setCode(""); // Si no tienes un campo "code" en entity
+        country.setName(entity.getName());
+        return country;
     }
 
     // Holiday
@@ -33,15 +38,17 @@ public class DomainEntityMapper {
     }
 
     public static Holiday toDomain(HolidayEntity entity) {
-        return new Holiday(
-                entity.getId(),
-                entity.getIdCountry(),
-                entity.getName(),
-                entity.getDay(),
-                entity.getMonth(),
-                entity.getEasterDays(),
-                entity.getIdType()
-        );
+        Holiday holiday = new Holiday();
+        holiday.setId(entity.getId());
+        holiday.setIdCountry(entity.getIdCountry());
+        holiday.setName(entity.getName());
+        holiday.setDay(entity.getDay());
+        holiday.setMonth(entity.getMonth());
+        holiday.setEasterDays(entity.getEasterDays());
+        holiday.setIdType(entity.getIdType());
+        // Estimación de fecha por día y mes
+        holiday.setDate(LocalDate.of(2025, entity.getMonth(), entity.getDay())); // Ajusta el año si es necesario
+        return holiday;
     }
 
     // Type
@@ -50,7 +57,10 @@ public class DomainEntityMapper {
     }
 
     public static Type toDomain(TypeEntity entity) {
-        return new Type(entity.getId(), entity.getType());
+        Type type = new Type();
+        type.setId(entity.getId());
+        type.setName(entity.getType());
+        type.setDescription(""); // Por defecto vacío
+        return type;
     }
 }
-

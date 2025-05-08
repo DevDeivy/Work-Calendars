@@ -1,6 +1,6 @@
-package domain.src.main.java.com.calendar.domain.repositories;
+package com.calendar.domain.repositories;
 
-import domain.src.main.java.com.calendar.domain.models.Country;
+import com.calendar.domain.models.Country;
 
 import java.util.List;
 import java.util.Optional;

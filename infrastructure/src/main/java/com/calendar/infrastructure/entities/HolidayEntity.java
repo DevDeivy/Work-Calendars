@@ -1,4 +1,4 @@
-package infrastructure.src.main.java.com.calendar.infrastructure.entities;
+package com.calendar.infrastructure.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

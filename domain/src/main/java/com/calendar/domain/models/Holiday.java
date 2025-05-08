@@ -1,8 +1,10 @@
-package domain.src.main.java.com.calendar.domain.models;
+package com.calendar.domain.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.time.LocalDate;
 
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
@@ -34,4 +36,7 @@ public class Holiday {
 
     @Min(value = 1, message = "Type ID must be greater than 0")
     private int idType;
+
+    private LocalDate date;
+
 }

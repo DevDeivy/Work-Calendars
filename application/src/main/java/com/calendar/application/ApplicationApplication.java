@@ -1,6 +1,6 @@
-package application.src.main.java.com.calendar.application;
+package com.calendar.application;
 
-import application.src.main.java.com.calendar.application.usecases.DatesCase;
+import com.calendar.application.usecases.DatesCase;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

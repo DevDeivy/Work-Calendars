@@ -1,7 +1,8 @@
-package application.src.main.java.com.calendar.application.usecases;
+package com.calendar.application.usecases;
 
-import domain.src.main.java.com.calendar.domain.models.Holiday;
 import org.springframework.stereotype.Component;
+
+import com.calendar.domain.models.Holiday;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;

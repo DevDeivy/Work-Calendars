@@ -1,4 +1,4 @@
-package application.src.main.java.com.calendar.application.usecases;
+package com.calendar.application.usecases;
 
 import java.util.Calendar;
 import java.util.Date;

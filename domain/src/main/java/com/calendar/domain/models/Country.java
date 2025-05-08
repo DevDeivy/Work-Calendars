@@ -1,4 +1,4 @@
-package domain.src.main.java.com.calendar.domain.models;
+package com.calendar.domain.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -21,4 +21,9 @@ public class Country {
     @NotEmpty(message = "Country name cannot be empty")
     @Size(max = 100, message = "Country name must be less than 100 characters")
     private String name;
+
+    @NotNull(message = "Country code cannot be null")
+    @NotEmpty(message = "Country code cannot be empty")
+    @Size(max = 10, message = "Country code must be less than 10 characters")
+    private String code;
 }

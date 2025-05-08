@@ -1,6 +1,6 @@
-package infrastructure.src.main.java.com.calendar.infrastructure.datapersistence.jpa;
+package com.calendar.infrastructure.datapersistence.jpa;
 
-import infrastructure.src.main.java.com.calendar.infrastructure.entities.CountryEntity;
+import com.calendar.infrastructure.entities.CountryEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
