@@ -1,12 +1,12 @@
-package infrastructure.src.main.java.com.calendar.infrastructure.datapersistence.mapper;
+package com.calendar.infrastructure.datapersistence.mapper;
 
 
-import domain.src.main.java.com.calendar.domain.models.Country;
-import domain.src.main.java.com.calendar.domain.models.Holiday;
-import domain.src.main.java.com.calendar.domain.models.Type;
-import infrastructure.src.main.java.com.calendar.infrastructure.entities.CountryEntity;
-import infrastructure.src.main.java.com.calendar.infrastructure.entities.HolidayEntity;
-import infrastructure.src.main.java.com.calendar.infrastructure.entities.TypeEntity;
+import com.calendar.domain.models.Country;
+import com.calendar.domain.models.Holiday;
+import com.calendar.domain.models.Type;
+import com.calendar.infrastructure.entities.CountryEntity;
+import com.calendar.infrastructure.entities.HolidayEntity;
+import com.calendar.infrastructure.entities.TypeEntity;
 
 public class DomainEntityMapper {
 

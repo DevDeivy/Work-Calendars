@@ -1,8 +1,8 @@
-package application.src.main.java.com.calendar.application.services;
+package com.calendar.application.services;
 
 
-import domain.src.main.java.com.calendar.domain.models.Type;
-import domain.src.main.java.com.calendar.domain.repositories.TypeRepository;
+import com.calendar.domain.models.Type;
+import com.calendar.domain.repositories.TypeRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

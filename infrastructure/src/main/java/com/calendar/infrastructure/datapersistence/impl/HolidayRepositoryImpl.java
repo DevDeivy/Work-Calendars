@@ -1,10 +1,10 @@
-package infrastructure.src.main.java.com.calendar.infrastructure.datapersistence.impl;
+package com.calendar.infrastructure.datapersistence.impl;
 
-import domain.src.main.java.com.calendar.domain.models.Holiday;
-import domain.src.main.java.com.calendar.domain.repositories.HolidayRepository;
-import infrastructure.src.main.java.com.calendar.infrastructure.datapersistence.jpa.HolidayJpaRepository;
-import infrastructure.src.main.java.com.calendar.infrastructure.datapersistence.mapper.DomainEntityMapper;
-import infrastructure.src.main.java.com.calendar.infrastructure.entities.HolidayEntity;
+import com.calendar.domain.models.Holiday;
+import com.calendar.domain.repositories.HolidayRepository;
+import com.calendar.infrastructure.datapersistence.jpa.HolidayJpaRepository;
+import com.calendar.infrastructure.datapersistence.mapper.DomainEntityMapper;
+import com.calendar.infrastructure.entities.HolidayEntity;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

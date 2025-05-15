@@ -1,9 +1,8 @@
-package application.src.main.java.com.calendar.application.services;
+package com.calendar.application.services;
 
-
-import application.src.main.java.com.calendar.application.usecases.HolidayDateCalculator;
-import domain.src.main.java.com.calendar.domain.models.Holiday;
-import domain.src.main.java.com.calendar.domain.repositories.HolidayRepository;
+import com.calendar.application.usecases.HolidayDateCalculator;
+import com.calendar.domain.models.Holiday;
+import com.calendar.domain.repositories.HolidayRepository;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;

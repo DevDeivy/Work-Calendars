@@ -1,8 +1,11 @@
-package application.src.main.java.com.calendar.application.usecases;
+package com.calendar.application.usecases;
+
+import org.springframework.stereotype.Component;
 
 import java.util.Calendar;
 import java.util.Date;
 
+@Component
 public class DatesCase {
     public static Date getstartSemanaSanta(int year) {
         int a = year % 19;

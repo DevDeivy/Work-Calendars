@@ -1,11 +1,11 @@
-package infrastructure.src.main.java.com.calendar.infrastructure.datapersistence.impl;
+package com.calendar.infrastructure.datapersistence.impl;
 
 
-import domain.src.main.java.com.calendar.domain.models.Country;
-import domain.src.main.java.com.calendar.domain.repositories.CountryRepository;
-import infrastructure.src.main.java.com.calendar.infrastructure.datapersistence.jpa.CountryJpaRepository;
-import infrastructure.src.main.java.com.calendar.infrastructure.datapersistence.mapper.DomainEntityMapper;
-import infrastructure.src.main.java.com.calendar.infrastructure.entities.CountryEntity;
+import com.calendar.domain.models.Country;
+import com.calendar.domain.repositories.CountryRepository;
+import com.calendar.infrastructure.datapersistence.jpa.CountryJpaRepository;
+import com.calendar.infrastructure.datapersistence.mapper.DomainEntityMapper;
+import com.calendar.infrastructure.entities.CountryEntity;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

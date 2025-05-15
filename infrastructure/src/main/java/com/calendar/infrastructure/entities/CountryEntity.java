@@ -1,4 +1,4 @@
-package infrastructure.src.main.java.com.calendar.infrastructure.entities;
+package com.calendar.infrastructure.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

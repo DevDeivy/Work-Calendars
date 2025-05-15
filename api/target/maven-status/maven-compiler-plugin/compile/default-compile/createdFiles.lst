@@ -1,1 +1,4 @@
-api\src\main\java\com\calendar\api\ApiApplication.class
+com\calendar\api\controllers\HolidayController.class
+com\calendar\api\ApiApplication.class
+com\calendar\api\controllers\CountryController.class
+com\calendar\api\controllers\TypeController.class

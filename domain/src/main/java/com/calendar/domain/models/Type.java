@@ -1,4 +1,4 @@
-package domain.src.main.java.com.calendar.domain.models;
+package com.calendar.domain.models;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
