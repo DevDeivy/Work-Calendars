@@ -1,6 +1,0 @@
-com\calendar\application\usecases\DatesCase.class
-com\calendar\application\usecases\HolidayDateCalculator.class
-com\calendar\application\services\TypeService.class
-com\calendar\application\ApplicationApplication.class
-com\calendar\application\services\HolidayService.class
-com\calendar\application\services\CountryService.class

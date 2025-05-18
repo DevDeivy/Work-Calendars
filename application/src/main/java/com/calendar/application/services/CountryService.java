@@ -1,8 +1,8 @@
 package com.calendar.application.services;
 
 
-import com.calendar.domain.models.Country;
-import com.calendar.domain.repositories.CountryRepository;
+import com.calendar.infrastructure.repositories.CountryRepository;
+import com.calendar.infrastructure.entities.CountryEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,21 +17,21 @@ public class CountryService {
         this.countryRepository = countryRepository;
     }
 
-    public Country createCountry(Country country) {
+    public CountryEntity createCountry(CountryEntity country) {
         return countryRepository.save(country);
     }
 
-    public Optional<Country> getCountryById(Long id) {
+    public Optional<CountryEntity> getCountryById(Long id) {
         return countryRepository.findById(id);
     }
 
-    public List<Country> getAllCountries() {
+    public List<CountryEntity> getAllCountries() {
         return countryRepository.findAll();
     }
 
-    public Country updateCountry(Country country) {
+    public CountryEntity updateCountry(CountryEntity country) {
         if (countryRepository.existsById(country.getId())) {
-            return countryRepository.update(country);
+            return countryRepository.save(country);
         } else {
             throw new IllegalArgumentException("Country not found");
         }

@@ -1,8 +1,8 @@
 package com.calendar.application.services;
 
 import com.calendar.application.usecases.HolidayDateCalculator;
-import com.calendar.domain.models.Holiday;
-import com.calendar.domain.repositories.HolidayRepository;
+import com.calendar.infrastructure.repositories.HolidayRepository;
+import com.calendar.infrastructure.entities.HolidayEntity;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -15,39 +15,38 @@ public class HolidayService {
     private final HolidayRepository holidayRepository;
     private final HolidayDateCalculator holidayDateCalculator;
 
-    public HolidayService(HolidayRepository holidayRepository,
-                          HolidayDateCalculator holidayDateCalculator) {
+    public HolidayService(HolidayRepository holidayRepository, HolidayDateCalculator holidayDateCalculator) {
         this.holidayRepository = holidayRepository;
         this.holidayDateCalculator = holidayDateCalculator;
     }
 
-    public Holiday createHoliday(Holiday holiday) {
+    public HolidayEntity createHoliday(HolidayEntity holiday) {
         if (holidayRepository.existsByName(holiday.getName())) {
             throw new IllegalArgumentException("Holiday with this name already exists");
         }
         return holidayRepository.save(holiday);
     }
 
-    public Optional<Holiday> getHoliday(Long id) {
+    public Optional<HolidayEntity> getHoliday(Long id) {
         return holidayRepository.findById(id);
     }
 
-    public List<Holiday> getAllHolidays() {
+    public List<HolidayEntity> getAllHolidays() {
         return holidayRepository.findAll();
     }
 
-    public Holiday updateHoliday(Holiday holiday) {
+    public HolidayEntity updateHoliday(HolidayEntity holiday) {
         if (!holidayRepository.findById(holiday.getId()).isPresent()) {
             throw new IllegalArgumentException("Holiday not found");
         }
-        return holidayRepository.update(holiday);
+        return holidayRepository.save(holiday);
     }
 
     public void deleteHoliday(Long id) {
         holidayRepository.deleteById(id);
     }
 
-    public LocalDate getHolidayDate(Holiday holiday, int year) {
+    public LocalDate getHolidayDate(HolidayEntity holiday, int year) {
         return holidayDateCalculator.calculateDate(holiday, year);
     }
 }

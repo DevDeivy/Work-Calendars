@@ -1,7 +1,4 @@
-com\calendar\domain\repositories\CountryRepository.class
 com\calendar\domain\models\Holiday.class
 com\calendar\domain\DomainApplication.class
-com\calendar\domain\models\Type.class
-com\calendar\domain\repositories\TypeRepository.class
 com\calendar\domain\models\Country.class
-com\calendar\domain\repositories\HolidayRepository.class
+com\calendar\domain\models\Type.class

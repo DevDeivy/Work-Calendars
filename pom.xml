@@ -9,8 +9,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>domain</module>
-        <module>application</module>
         <module>infrastructure</module>
+        <module>application</module>
         <module>api</module>
     </modules>
     <dependencyManagement>

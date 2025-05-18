@@ -1,8 +1,8 @@
 package com.calendar.application.services;
 
 
-import com.calendar.domain.models.Type;
-import com.calendar.domain.repositories.TypeRepository;
+import com.calendar.infrastructure.repositories.TypeRepository;
+import com.calendar.infrastructure.entities.TypeEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,21 +17,21 @@ public class TypeService {
         this.typeRepository = typeRepository;
     }
 
-    public Type createType(Type type) {
+    public TypeEntity createType(TypeEntity type) {
         return typeRepository.save(type);
     }
 
-    public Optional<Type> getTypeById(Long id) {
+    public Optional<TypeEntity> getTypeById(Long id) {
         return typeRepository.findById(id);
     }
 
-    public List<Type> getAllTypes() {
+    public List<TypeEntity> getAllTypes() {
         return typeRepository.findAll();
     }
 
-    public Type updateType(Type type) {
+    public TypeEntity updateType(TypeEntity type) {
         if (typeRepository.existsById(type.getId())) {
-            return typeRepository.update(type);
+            return typeRepository.save(type);
         } else {
             throw new IllegalArgumentException("Type not found");
         }

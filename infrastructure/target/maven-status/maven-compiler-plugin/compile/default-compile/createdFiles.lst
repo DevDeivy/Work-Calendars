@@ -1,11 +1,8 @@
-com\calendar\infrastructure\datapersistence\impl\HolidayRepositoryImpl.class
-com\calendar\infrastructure\datapersistence\jpa\HolidayJpaRepository.class
 com\calendar\infrastructure\entities\TypeEntity.class
 com\calendar\infrastructure\entities\CountryEntity.class
-com\calendar\infrastructure\datapersistence\jpa\CountryJpaRepository.class
 com\calendar\infrastructure\InfrastructureApplication.class
-com\calendar\infrastructure\datapersistence\impl\CountryRepositoryImpl.class
-com\calendar\infrastructure\datapersistence\jpa\TypeJpaRepository.class
+com\calendar\infrastructure\mapper\DomainEntityMapper.class
+com\calendar\infrastructure\Repositories\HolidayRepository.class
+com\calendar\infrastructure\Repositories\CountryRepository.class
 com\calendar\infrastructure\entities\HolidayEntity.class
-com\calendar\infrastructure\datapersistence\impl\TypeRepositoryImpl.class
-com\calendar\infrastructure\datapersistence\mapper\DomainEntityMapper.class
+com\calendar\infrastructure\Repositories\TypeRepository.class

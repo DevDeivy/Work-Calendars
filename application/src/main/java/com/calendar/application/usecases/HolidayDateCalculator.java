@@ -1,6 +1,7 @@
 package com.calendar.application.usecases;
 
 import com.calendar.domain.models.Holiday;
+import com.calendar.infrastructure.entities.HolidayEntity;
 import org.springframework.stereotype.Component;
 
 import java.time.DayOfWeek;
@@ -10,7 +11,7 @@ import java.time.temporal.TemporalAdjusters;
 @Component
 public class HolidayDateCalculator {
 
-    public LocalDate calculateDate(Holiday holiday, int year) {
+    public LocalDate calculateDate(HolidayEntity holiday, int year) {
         if (holiday.getMonth() < 1 || holiday.getMonth() > 12) {
             throw new IllegalArgumentException("Month must be between 1 and 12");
         }
